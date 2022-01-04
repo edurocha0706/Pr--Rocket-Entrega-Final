@@ -1,14 +1,209 @@
 @font-face{
-    font-family: 'newfont';
-    src: url(../fonts/newfont);
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.otf);
 }
 
 @font-face{
-    font-family: 'newfont';
-    src: url(../fonts/newfont);
+    font-family: 'Poppins-Italic';
+    src: url(../fonts/Poppins-Italic.otf);
 }
 
 @font-face{
-    font-family: 'newfont';
-    src: url(../fonts/newfont);
+    font-family: 'Poppins-Medium';
+    src: url(../fonts/Poppins-Medium.otf);
+}
+
+@font-face{
+    font-family: 'Poppins-Light';
+    src: url(../fonts/Poppins-Light.otf);
+}
+
+@font-face{
+    font-family: 'Roboto-regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+hr{
+    opacity: 75%;
+    margin-top: 10px;
+}
+
+h1{
+    color: #ffffff;
+    font-family: 'Poppins-light';
+    font-size: 40px;
+    font-style: italic;
+}
+
+body{
+    background-color: #0d161f;
+}
+
+.header{
+    background-image: url(../images/Grupo\ 523.png);
+    background-size: cover;
+    width: 100%;
+    height: 768px;
+    font-family: 'Poppins-Regular';
+}
+
+.header-flexbox1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-div1{
+    flex-basis: auto;
+    margin-top: 16px;
+    margin-left: 112px;
+}
+
+.header-logo1{
+    width: 87px;
+    height: 57px;
+}
+
+.header-div2{
+    flex-basis: auto;
+    margin-top: 35px;
+}
+
+.header-list{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+.header-list li{
+    display: inline-block;
+}
+
+.header-links-style{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.header-div3{
+    flex-basis: auto;
+    margin-top: 35px;
+    margin-right: 113px;
+}
+
+.header-button{
+    width: 131px;
+    height: 36px;
+    padding: 8px 16px;
+    background: #e13157 no-repeat;
+    font-size: 14px;
+    text-decoration: none; 
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px #e13157;
+}
+
+.header-flexbox2{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.header-div4{
+    margin-top: 525px;
+}
+
+.header-logo2{
+    width: 712px;
+    height: 128px;
+}
+
+.background-images{
+    width: 100%;
+    height: 1323px;
+    background-image: url(../images/Retângulo\ 90.svg), url(../images/valorant-ep1-ato3-publi.png);
+    background-size: cover;
+    opacity: 0.06;
+    position: absolute;
+}
+
+.agents-title{
+    margin-top: 128px;
+    margin-left: 113px;
+}
+
+.agents-flexbox{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-top: 39px;
+    margin-left: 112px;
+    position: relative;
+}
+
+.agents-flexbox p:only-of-type{
+    font-family: 'Poppins-medium';
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 251px;
+    text-align: center;
+}
+
+.agent-div{
+    width: 250px;
+    height: 300px;
+    margin-right: 54px;
+    margin-bottom: 39px;
+    padding: 5px;
+    border: 1px solid #133052;
+
+}
+
+.agent-div:hover{
+    width: 250px;
+    height: 300px;
+    margin-right: 54px;
+    margin-bottom: 39px;
+    padding: 5px;
+    border: 1px solid #e13157;    
+}
+
+.agent-img{
+    position: absolute;
+}
+
+.agent{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #133052 ;
+    background: linear-gradient(180deg, transparent 65%, #26262600, #1a1a1abf, #090909);
+    position: absolute;
+}
+
+.agent:hover{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #133052 ;
+    background: linear-gradient(180deg, #E1315712 70%, #e1315775, #e13157);
+}
+
+.seeall-div{
+    width: 260px;
+    height: 312px;
+    border: 1px solid #e13157;
+    background-image: url(../images/Caminho\ 243.svg);
+    background-repeat: no-repeat;
+    background-position-x: 56px;
+    background-position-y: 146.02px;
+}
+
+h2{
+    font-family: 'Poppins-medium';
+    font-size: 24px;
+    color: #e13157;
+    margin-left: 91px;
+    margin-top: 141px;
 }
