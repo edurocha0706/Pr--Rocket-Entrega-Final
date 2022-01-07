@@ -191,14 +191,31 @@ body{
     background: linear-gradient(180deg, #E1315712 70%, #e1315775, #e13157);
 }
 
-.seeall-div{
+.add-div-text{
+    display: none;
     width: 260px;
-    height: 312px;
+    height: 310px;
+    border: 1px solid #e13157;
+    background-image: url(../images/Caminho\ 261.svg);
+    background-repeat: no-repeat;
+    background-position-x: 56px;
+    background-position-y: 146.02px;
+    margin-right: 44px;
+    margin-bottom: 29px;
+    cursor: pointer;
+}
+
+.seeall-div-text{
+    width: 260px;
+    height: 310px;
     border: 1px solid #e13157;
     background-image: url(../images/Caminho\ 243.svg);
     background-repeat: no-repeat;
     background-position-x: 56px;
     background-position-y: 146.02px;
+    margin-right: 44px;
+    margin-bottom: 29px;
+    cursor: pointer;
 }
 
 h2{

@@ -22,15 +22,15 @@
     height: 100%;
 }
 
-.popup{
+.popup-agent{
     width: 1114px;
     height: 713px;
-    margin: 10% auto;
+    margin: 18% auto;
     background-color: #ffffff;
     position: relative;
 }
 
-.popup-close{
+.popup-agent-close{
     float: right;
     margin-top: 28.53px;
     margin-right: 28.53px;
@@ -117,4 +117,148 @@ h3{
 .agent-popup-img{
     width: 286px;
     height: 613px;
+}
+
+.popup-add{
+    display: none;
+    background: #44505fab;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-add-close{
+    float: right;
+    margin-top: 28.53px;
+    margin-right: 28.53px;
+    cursor: pointer;
+}
+
+.popup-add-new-agent{
+    width: 1158px;
+    height: 690px;
+    margin: 18% auto;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.popup-add-content-flexbox{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+}
+
+.popup-add-title{
+    font-family: 'SegoeUI-Bold';
+    font-size: 54px;
+    line-height: 40px;
+    color: #133052;
+    margin-left: 45px;
+}
+
+.forms-image-flexbox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.forms-image-flexbox input, .forms-image-flexbox select{
+    font-family: 'Roboto-regular';
+    padding-left: 16px;
+    font-size: 16px;
+    color: #133052;
+}
+
+.forms-image-flexbox input::placeholder{
+    color: #133052;
+}
+
+.forms-flexbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.form1-popup-add-agent{
+    
+}
+
+.add-function-field{
+    width: 355px;
+    height: 56px;
+    border: 1px solid #133052;
+    border-radius: 5px;
+    margin-right: 24px;
+    margin-bottom: 21px;
+}
+
+.add-skills-field{
+
+}
+
+.form2-popup-add-agent{
+
+}
+
+.add-description-field{
+
+}
+
+.add-damage-field{
+
+}
+
+.add-skills-field, .add-description-field, .add-damage-field{
+    width: 335px;
+    height: 52px;
+    border: 1px solid #133052;
+    border-radius: 5px;
+    margin-right: 24px;
+    margin-bottom: 21px;
+}
+
+.image-new-agent{
+    width: 302px;
+    height: 361px;
+    border: 1px solid #e13157;
+    background-image: url(../images/Caminho\ 261.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100.15px;
+    background-position-y: 168.85px;
+    margin-right: 44px;
+    margin-bottom: 29px;
+    cursor: pointer;
+}
+
+.image-new-agent h2{
+    margin-top: 161px;
+    margin-left: 142px;
+    font-size: 27px;
+}
+
+.cancel-save-buttons{
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+.cancel-button, .save-button{
+    font-family: 'Poppins-medium';
+    width: 142px;
+    height: 53px;
+    border-radius: 5px;
+}
+
+.cancel-button{
+    background-color: #ffffff;
+    color: #133052;
+    border: 1px solid #133052;
+}
+
+.save-button{
+    background-color: #e13157;
+    color: #ffffff;
+    margin-left: 20px;
+    border: none;
 }
