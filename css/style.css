@@ -156,18 +156,18 @@ body{
 .agent-div{
     width: 250px;
     height: 300px;
-    margin-right: 54px;
-    margin-bottom: 39px;
+    margin-right: 44px;
+    margin-bottom: 29px;
     padding: 5px;
     border: 1px solid #133052;
-
+    cursor: pointer;
 }
 
 .agent-div:hover{
     width: 250px;
     height: 300px;
-    margin-right: 54px;
-    margin-bottom: 39px;
+    margin-right: 44px;
+    margin-bottom: 29px;
     padding: 5px;
     border: 1px solid #e13157;    
 }
