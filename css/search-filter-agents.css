@@ -1,54 +1,59 @@
-@font-face{
-    font-family: 'Poppins-semibold';
-    src: url(../fonts/Poppins-SemiBold.otf);
-}
-
 .search-filter-flexbox{
     display: none;
     margin-left: 112px;
     margin-top: 40px;
 }
-.search-agents{
-    width: 310px;
+.search-field{
+    width: 259px;
     height: 53px;
+    font-family: 'Roboto-italic';
+    font-size: 16px;
+    color: #133052;
+    border-radius: 5px;
+    border: none;
+    padding-left: 51px;
+    background-image: url(/images/Caminho263.svg);
+    background-repeat: no-repeat;
+    background-position-x: 18px;
+    background-position-y: 18px;
 }
+
 .filter-agents-flexbox{
     width: 1178px;
-    height: 176px;
+    height: 160px;
     margin-top: 20px;
     border:1px solid #707070;
     border-radius: 5px;
 }
 
-.search-field{
-    width: 310px;
-    height: 200px;
-}
-
-.skills-field{
+.skills-field, .filter-field, .damage-field{
     width: 300px;
     height: 53px;
     margin-left: 20px;
+    font-family: 'Roboto-regular';
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 16px;
 }
 
-.filter-field{
-    width: 300px;
-    height: 53px;
-    margin-left: 20px;
+.skills-field, .filter-field{
+    color: #133052;
 }
 
-.damage-field{
-    width: 300px;
-    height: 53px;
-    margin-left: 20px;
+.search-field::placeholder, .damage-field::placeholder{
+    color: #133052;
 }
 
 .filter-button{
     width: 142px;
     height: 53px;
+    font-family: 'Roboto-bold';
     background-color: #e13157;
     color: #ffffff;
     margin-left: 20px;
+    border-radius: 5px;
+    border: none;
 }
 
 h4{

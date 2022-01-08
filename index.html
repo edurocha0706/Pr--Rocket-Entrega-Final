@@ -49,35 +49,37 @@
         </header>
 
         <!-------- DIV AGENTS -------->
-        <div class="all-agents">
+
+        <div class="background-images-agents"></div>
+
+        <div class="all-agents">       
+
             <div class="agents-title"><h1>AGENTES</h1></div>
 
             <div class="search-filter-flexbox">
                 
-                <input class="search-agents" required maxlength="20" placeholder="Pesquisar agentes...">
+                <input class="search-field" required maxlength="30" placeholder="Pesquisar agentes...">
                 
                 <div class="filter-agents-flexbox">
                     <h4>Filtrar agentes</h4>
                     <select class="skills-field" name="">
                         <option value="0">Selecione uma habilidade</option>
-                        <option value="a1">Arma branca</option>
-                        <option value="a2">Arma primária</option>
-                        <option value="a3">Arma secundária</option>
-                        <option value="a4">Especial</option>
+                        <option value="Arma branca">Arma branca</option>
+                        <option value="Arma primária">Arma primária</option>
+                        <option value="Arma secundária">Arma secundária</option>
+                        <option value="Especial">Especial</option>
                     </select>
                     <select class="filter-field" name="">
                         <option value="00">Selecione um filtro</option>
                         <option value="maior-menor">Filtrar do maior para o menor</option>
                         <option value="menor-maior">Filtrar do menor para o maior</option>
                     </select>
-                    <input class="damage-field" type="number" min="0" max="100">
+                    <input class="damage-field" type="number" min="0" max="100" placeholder="Informe o valor do dano">
                     <input class="filter-button" type="button" value="FILTRAR">
                 </div>
             </div>
 
-            <div class="background-images-agents"></div>
-
-            <div class="agents-flexbox">
+            <div class="agents-flexbox" id="agents-flexbox-id">
                 <div class="add-div-text"><h2>adicionar</h2></div>
 
                 <div class="agent-div agent1">    
@@ -172,26 +174,50 @@
                     <div class="forms-image-flexbox">
                         <div class="forms-flexbox">
                             <form class="form1-popup-add-agent">
-                                <select class="add-function-field" name="">
-                                    <option value="f0">Função</option>
-                                    <option value="f1">Dualista</option>
-                                    <option value="f2">Controlador</option>
-                                    <option value="f3">Iniciador</option>
-                                    <option value="f4">Sentinela</option>
+                                <select class="add-function-field" id="function-field" name="">
+                                    <option value="0">Função</option>
+                                    <option value="Dualista">Dualista</option>
+                                    <option value="Controlador">Controlador</option>
+                                    <option value="Iniciador">Iniciador</option>
+                                    <option value="Sentinela">Sentinela</option>
                                 </select><br>
-                                <input class="add-skills-field" required type="text" maxlength="20" placeholder="Habilidade - 2"><br>
-                                <input class="add-skills-field" required type="text" maxlength="20" placeholder="Habilidade - 3"><br>
-                                <input class="add-skills-field" required type="text" maxlength="20" placeholder="Habilidade - 4"><br>
-                                <input class="add-skills-field" required type="text" maxlength="20" placeholder="Habilidade - 1">
+                                <select class="add-skills-field" id="skills-field-1" name="">
+                                    <option value="0">Habilidade - 1</option>
+                                    <option value="Arma branca">Arma branca</option>
+                                    <option value="Arma primária">Arma primária</option>
+                                    <option value="Arma secundária">Arma secundária</option>
+                                    <option value="Especial">Especial</option>
+                                </select><br>
+                                <select class="add-skills-field" id="skills-field-2" name="">
+                                    <option value="0">Habilidade - 2</option>
+                                    <option value="Arma branca">Arma branca</option>
+                                    <option value="Arma primária">Arma primária</option>
+                                    <option value="Arma secundária">Arma secundária</option>
+                                    <option value="Especial">Especial</option>
+                                </select><br>
+                                <select class="add-skills-field" id="skills-field-3" name="">
+                                    <option value="0">Habilidade - 3</option>
+                                    <option value="Arma branca">Arma branca</option>
+                                    <option value="Arma primária">Arma primária</option>
+                                    <option value="Arma secundária">Arma secundária</option>
+                                    <option value="Especial">Especial</option>
+                                </select><br>
+                                <select class="add-skills-field" id="skills-field-4" name="">
+                                    <option value="0">Habilidade - 4</option>
+                                    <option value="Arma branca">Arma branca</option>
+                                    <option value="Arma primária">Arma primária</option>
+                                    <option value="Arma secundária">Arma secundária</option>
+                                    <option value="Especial">Especial</option>
+                                </select>
                             </form>
                         </div>
                         <div>
                             <form class="form2-popup-add-agent">
-                                <input class="add-description-field" required type="text" min="0" max="100" placeholder="Descrição"><br>
-                                <input class="add-damage-field" required type="number" min="0" max="100" placeholder="Dano Habilidade - 1"><br>
-                                <input class="add-damage-field" required type="number" min="0" max="100" placeholder="Dano Habilidade - 2"><br>
-                                <input class="add-damage-field" required type="number" min="0" max="100" placeholder="Dano Habilidade - 3"><br>
-                                <input class="add-damage-field" required type="number" min="0" max="100" placeholder="Dano Habilidade - 4">
+                                <input class="add-description-field" id="description-field" required type="text" min="0" max="100" placeholder="Descrição"><br>
+                                <input class="add-damage-field" id="damage-field-1" required type="number" placeholder="Dano Habilidade - 1"><br>
+                                <input class="add-damage-field" id="damage-field-2" required type="number" placeholder="Dano Habilidade - 2"><br>
+                                <input class="add-damage-field" id="damage-field-3" required type="number" placeholder="Dano Habilidade - 3"><br>
+                                <input class="add-damage-field" id="damage-field-4" required type="number" placeholder="Dano Habilidade - 4">
                             </form>
                         </div>
                         <div class="image-new-agent"><h2>Foto</h2></div>
@@ -200,7 +226,7 @@
                 </div>
                     <div class="cancel-save-buttons">
                         <input class="cancel-button" type="button" value="CANCELAR">
-                        <input class="save-button" type="button" value="SALVAR">
+                        <input class="save-button" type="submit" value="SALVAR">
                     </div>
             </div>
         </div>

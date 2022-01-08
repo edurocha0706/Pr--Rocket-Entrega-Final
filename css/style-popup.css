@@ -180,11 +180,7 @@ h3{
     flex-direction: column;
 }
 
-.form1-popup-add-agent{
-    
-}
-
-.add-function-field{
+.add-function-field, .add-skills-field{
     width: 355px;
     height: 56px;
     border: 1px solid #133052;
@@ -193,23 +189,7 @@ h3{
     margin-bottom: 21px;
 }
 
-.add-skills-field{
-
-}
-
-.form2-popup-add-agent{
-
-}
-
-.add-description-field{
-
-}
-
-.add-damage-field{
-
-}
-
-.add-skills-field, .add-description-field, .add-damage-field{
+.add-description-field, .add-damage-field{
     width: 335px;
     height: 52px;
     border: 1px solid #133052;

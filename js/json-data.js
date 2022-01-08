@@ -320,4 +320,8 @@
     console.log(allagents[0].data.agents[1].skills[3].damage);
     console.log(allagents[0].data.agents[1].image);
 
+    console.log(allagents[0].data.agents[1]);    
+
   })()
+
+  
