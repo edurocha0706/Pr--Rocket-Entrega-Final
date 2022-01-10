@@ -17,10 +17,10 @@
         <link rel="stylesheet" href="css/flickity.css">
         <link rel="stylesheet" href="css/style-popup.css">
         <link rel="stylesheet" href="css/search-filter-agents.css">
-        
+
     </head>
     <body>
-
+    
         <!-------- HEADER -------->
         <header class="header">
             <div class='header-flexbox1'>
@@ -82,47 +82,47 @@
             <div class="agents-flexbox" id="agents-flexbox-id">
                 <div class="add-div-text"><h2>adicionar</h2></div>
 
-                <div class="agent-div agent1">    
+                <div class="agent-div">    
                     <img class="agent-img" src="images/V_AGENTS_587x900_Jett.png" alt="agente Jeff">       
                     <div class="agent"><p>JETT</p></div>
                 </div>
-                <div class="agent-div agent2">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_ALL_Raze_2.png" alt="agente Raze">  
                     <div class="agent"><p>RAZE</p></div>
                 </div>
-                <div class="agent-div agent3">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_Breach.png" alt="agente Breach">  
                     <div class="agent"><p>BREACH</p></div>
                 </div>
-                <div class="agent-div agent4">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_Omen.png" alt="agente Omen">  
                     <div class="agent"><p>OMEN</p></div>
                 </div>
-                <div class="agent-div agent5">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_Brimstone.png" alt="agente Brimstone">  
                     <div class="agent"><p>BRIMSTONE</p></div>
                 </div>
-                <div class="agent-div agent6">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_Phx.png" alt="agente Phoenix">  
                     <div class="agent"><p>PHOENIX</p></div>
                 </div>
-                <div class="agent-div agent7">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_sage.png" alt="agente Sage">  
                     <div class="agent"><p>SAGE</p></div>
                 </div>
-                <div class="agent-div agent8">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_ALL_Sova_2.png" alt="agente Sova">  
                     <div class="agent"><p>SOVA</p></div>
                 </div>
-                <div class="agent-div agent9">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_Viper.png" alt="agente Viper">  
                     <div class="agent"><p>VIPER</p></div>
                 </div>
-                <div class="agent-div agent10">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_Cypher-1.png" alt="agente Cypher">  
                     <div class="agent"><p>CYPHER</p></div>
                 </div>
-                <div class="agent-div agent11">
+                <div class="agent-div">
                     <img class="agent-img" src="images/V_AGENTS_587x900_Reyna.png" alt="agente Reyna">  
                     <div class="agent"><p>REYNA</p></div>
                 </div>
@@ -136,30 +136,8 @@
                 <div class="popup-agent-close">
                     <img class="close-button-image"src="images/close-button.png" alt="botão de fechar popup">
                 </div>
-                <div class="popup-content-flexbox">
-                    <div class="content-data">
-                        <h3>FUNÇÃO</h3>
-                        <p class="function">(variável da função)</p>
-                        <p class="description">(variável da descrição)</p>
-                        <h3>HABILIDADES</h3>
-                        <div class="skills-flexbox">
-                            <div class="types-of-weapons">
-                                <p>Arma branca</p>
-                                <p>Arma primária</p>
-                                <p>Arma secundária</p>
-                                <p>Especial</p>
-                            </div>
-                            <div class="damages">
-                                <p>va Dano</p>
-                                <p>va Dano</p>
-                                <p>va Dano</p>
-                                <p>va Dano</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-image">
-                        <img class="agent-img" src="images/V_AGENTS_587x900_Jett_big.png" alt="imagem do agente">
-                    </div>
+                <div class="popup-content-flexbox" id="popup-content-flexbox-id">
+                    
                 </div>
             </div>
         </div>
@@ -169,7 +147,7 @@
                 <div class="popup-add-close">
                     <img class="close-button-image"src="images/close-button.png" alt="botão de fechar popup">
                 </div><br>
-                <div class="popup-add-title"><p>Adicionar agente</p></div>
+                <div class="popup-add-title"><input class="add-name-field" id="name-field" required type="text" maxlength="15" placeholder="'Digite o nome'"></div>
                 <div class="popup-add-content-flexbox">   
                     <div class="forms-image-flexbox">
                         <div class="forms-flexbox">
@@ -213,16 +191,20 @@
                         </div>
                         <div>
                             <form class="form2-popup-add-agent">
-                                <input class="add-description-field" id="description-field" required type="text" min="0" max="100" placeholder="Descrição"><br>
-                                <input class="add-damage-field" id="damage-field-1" required type="number" placeholder="Dano Habilidade - 1"><br>
-                                <input class="add-damage-field" id="damage-field-2" required type="number" placeholder="Dano Habilidade - 2"><br>
-                                <input class="add-damage-field" id="damage-field-3" required type="number" placeholder="Dano Habilidade - 3"><br>
-                                <input class="add-damage-field" id="damage-field-4" required type="number" placeholder="Dano Habilidade - 4">
+                                <input class="add-description-field" id="description-field" required type="text" maxlength="300" placeholder="Descrição"><br>
+                                <input class="add-damage-field" id="damage-field-1" required type="number text" maxlength="2" placeholder="Dano Habilidade - 1"><br>
+                                <input class="add-damage-field" id="damage-field-2" required type="number text" maxlength="2" placeholder="Dano Habilidade - 2"><br>
+                                <input class="add-damage-field" id="damage-field-3" required type="number text" maxlength="2" placeholder="Dano Habilidade - 3"><br>
+                                <input class="add-damage-field" id="damage-field-4" required type="number text" maxlength="2" placeholder="Dano Habilidade - 4">
                             </form>
                         </div>
-                        <div class="image-new-agent"><h2>Foto</h2></div>
+                        <div class="image-new-agent">
+                            <div class="image-text-position">
+                                <label for="image-field" class="image-label-new-agent">Foto</label>
+                                <input class="add-image-field" id="image-field" required type="file">
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
                     <div class="cancel-save-buttons">
                         <input class="cancel-button" type="button" value="CANCELAR">
