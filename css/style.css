@@ -48,7 +48,7 @@ h1{
     font-family: 'Poppins-light';
     font-size: 40px;
     font-style: italic;
-    padding-left: 113px;
+    line-height: 52px;
 }
 
 body{
@@ -144,6 +144,9 @@ body{
     background-size: fixed;
     opacity: 0.06;
     position: absolute;
+}
+.agents-title h1{
+    margin-left: 113px;
 }
 
 .agents-title{
@@ -258,11 +261,210 @@ hr{
     margin-left: 40%;
 }
 
+.section3{
+    width: 100%;
+    height: 732.95;
+    font-family: 'Poppins-light';
+    color: #ffffff;
+    margin-top: 400.53px;
+}
+
+.section3-flexbox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 733px;
+}
+
+.download-content{
+    flex-basis: auto;
+    width: 565px;
+    margin-top: 143px;
+    margin-left: 113px;
+}
+
+.download-content p{
+    font-size: 24px;
+    margin-left: 57.86px;
+    margin-bottom: 30px;
+}
+
+.first-p{
+    margin-top: 62px;
+    background: no-repeat;
+    background-image: url(../images/Caminho-250.png);
+}
+
+.second-p{
+    background: no-repeat;
+    background-image: url(../images/Caminho-246.png);
+}
+
+.third-p{
+    background: no-repeat;
+    background-image: url(../images/Caminho-247.png);
+}
+
+.game-image-div{
+    flex-basis: auto;
+    width: 663px;
+    height: 733px;
+    margin-left: 94.2px;
+    margin-right: 112px;
+}
+
+.game-image{
+    width: 663px;
+    height: 733px;
+}
+
+.download-button-div{
+    margin-top: 58px;
+}
+
+.download-button{
+    padding: 8px 32px 8px 70px;
+    background: #e13157 no-repeat;
+    background-image: url(../images/Caminho-249.png);
+    background-position-x: 32px;
+    background-position-y: 8px;
+    font-size: 14px;
+    text-decoration: none; 
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px #e13157;
+}
+
+.section4{
+    width: 4203px;
+    height: 1090.53px;;
+}
+
+.section4-flexbox{
+    display: flex;
+    flex-direction: row;
+    width: 1158px;
+    height: 685px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 305.53px 104px 100px 104px;
+}
+
+.forms-suport-div{
+    width: 724px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.forms-suport-div h1{
+    color: #04254c;
+    line-height: 0;
+    font-family: 'Poppins-light';
+}
+
+.suport-form input::placeholder{
+    color: #133052;
+    padding-top: 16px;
+    position: absolute;
+}
+
+textarea::placeholder{
+    color: #133052;
+    position: absolute;
+}
+
+.suport-form{
+    margin-top: 63px;
+}
+
+.suport-name-field, .suport-lastname-field, .suport-nick-name-field, .suport-subject-field, .suport-description-field{
+    font-family: 'Roboto-regular';
+    font-size: 16px;
+    border: 1px solid #133052;
+    border-radius: 5px;
+    padding-left: 16px;
+}
+
+.suport-name-field{
+    width: 327px;
+    height: 53px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.suport-lastname-field{
+    width: 327px;
+    height: 53px;
+    margin-bottom: 24px;
+}
+
+.suport-e-mail-field{
+    font-family: 'Roboto-regular';
+    font-size: 16px;
+    border: 1px solid #133052;
+    border-radius: 5px;
+    margin-right: 24px;
+    margin-bottom: 21px;
+    width: 327px;
+    height: 53px;
+    padding-left: 16px;
+}
+
+.suport-nick-name-field{
+    width: 327px;
+    height: 53px;
+    margin-bottom: 24px;
+}
+
+.suport-subject-field{
+    width: 704px;
+    height: 53px;
+    margin-bottom: 24px;
+}
+
+.suport-description-field{
+    width: 704px;
+    height: 136px;
+    padding-top: 16px;
+}
+
+.image-suport-div{
+    margin: 218px 34px 151px 34px;
+    width: 316px;
+    height: 316px;
+}
+
+.image-character{
+    width: 316px;
+    height: 316px;
+}
+
+.send-suport-button-div{
+    width: 143px;
+    height: 53px;
+    float: right;
+    margin-top: 54px;
+}
+
+.send-suport-button{
+    font-family:'Poppins-medium';
+    padding: 14px 44px;
+    background: #e13157;
+    font-size: 18px;
+    text-decoration: none; 
+    color: #ffffff;
+    border-radius: 5px;    
+}
+
 /* Carrosel de mapas - INÍCIO*/
 
 .section1-flexbox{
     margin-top: 34px;
     margin-left: 112px;
+}
+
+.section1 h1{
+    margin-left: 113px;
 }
 
 .gallery img{
