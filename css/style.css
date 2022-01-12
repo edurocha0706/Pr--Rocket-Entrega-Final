@@ -352,19 +352,19 @@ hr{
     margin: 305.53px auto 100px auto;
 }
 
-.forms-suport-div{
+.forms-support-div{
     width: 724px;
     margin-top: 50px;
     margin-left: 50px;
 }
 
-.forms-suport-div h1{
+.forms-support-div h1{
     color: #04254c;
     line-height: 0;
     font-family: 'Poppins-light';
 }
 
-.suport-form input::placeholder{
+.support-form input::placeholder{
     color: #133052;
     padding-top: 16px;
     position: absolute;
@@ -375,11 +375,11 @@ textarea::placeholder{
     position: absolute;
 }
 
-.suport-form{
+.support-form{
     margin-top: 63px;
 }
 
-.suport-name-field, .suport-lastname-field, .suport-nick-name-field, .suport-subject-field, .suport-description-field{
+.support-name-field, .support-lastname-field, .support-nick-name-field, .support-subject-field, .support-description-field{
     font-family: 'Roboto-regular';
     font-size: 16px;
     border: 1px solid #133052;
@@ -387,20 +387,20 @@ textarea::placeholder{
     padding-left: 16px;
 }
 
-.suport-name-field{
+.support-name-field{
     width: 327px;
     height: 53px;
     margin-right: 24px;
     margin-bottom: 24px;
 }
 
-.suport-lastname-field{
+.support-lastname-field{
     width: 327px;
     height: 53px;
     margin-bottom: 24px;
 }
 
-.suport-e-mail-field{
+.support-e-mail-field{
     font-family: 'Roboto-regular';
     font-size: 16px;
     border: 1px solid #133052;
@@ -412,25 +412,25 @@ textarea::placeholder{
     padding-left: 16px;
 }
 
-.suport-nick-name-field{
+.support-nick-name-field{
     width: 327px;
     height: 53px;
     margin-bottom: 24px;
 }
 
-.suport-subject-field{
+.support-subject-field{
     width: 704px;
     height: 53px;
     margin-bottom: 24px;
 }
 
-.suport-description-field{
+.support-description-field{
     width: 704px;
     height: 136px;
     padding-top: 16px;
 }
 
-.image-suport-div{
+.image-support-div{
     margin: 218px 34px 151px 34px;
     width: 316px;
     height: 316px;
@@ -441,14 +441,14 @@ textarea::placeholder{
     height: 316px;
 }
 
-.send-suport-button-div{
+.send-support-button-div{
     width: 143px;
     height: 53px;
     float: right;
     margin-top: 54px;
 }
 
-.send-suport-button{
+.send-support-button{
     font-family:'Poppins-medium';
     padding: 14px 44px;
     background: #e13157;

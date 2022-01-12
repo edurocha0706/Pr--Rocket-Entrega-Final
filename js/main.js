@@ -6,8 +6,10 @@ window.onload=function(){
 
   $popupClose.addEventListener('click', function(){
     $popupWrapper.style.display = 'none';
+    
     document.getElementById('content-data-id').remove();
     document.getElementById('content-image-id').remove();
+    
   });
 
   var $seeAllDiv = document.querySelector('.seeall-div-text')
@@ -73,9 +75,7 @@ window.onload=function(){
 
     $popupAdd.style.display = 'none';
 
-    console.log(newAgentCreated);
-
-    clean();
+    cleanAgentsField();
     
     arrNewAgents.push(newAgentCreated);
 
@@ -120,7 +120,7 @@ window.onload=function(){
           }
   }
   
-  function clean(){
+  function cleanAgentsField(){
     document.getElementById('name-field').value = '';
     document.getElementById('function-field').value = 0;
     document.getElementById('description-field').value = '';
@@ -133,6 +133,65 @@ window.onload=function(){
     document.getElementById('damage-field-3').value = '';
     document.getElementById('damage-field-4').value = '';
     document.getElementById('image-field').value = '';
+  }
+
+  var $sendSupportButton = document.querySelector('.send-support-button');
+
+  var nameSupport = '';
+  var lastNameSupport = '';
+  var emailSupport = '';
+  var nickNameSupport = '';
+  var subjectSupport = '';
+  var descriptionSupport = '';
+
+  var newSupportMsgCreated;
+  var arrNewSupportMsgs = [];
+  var count2 = 0;
+
+  $sendSupportButton.addEventListener('click', function(){
+    nameSupport = document.getElementById('support-name-id').value;
+    lastNameSupport = document.getElementById('support-lastname-id').value;
+    emailSupport = document.getElementById('support-e-mail-id').value;
+    nickNameSupport = document.getElementById('support-nick-name-id').value;
+    subjectSupport = document.getElementById('support-subject-id').value;
+    descriptionSupport = document.getElementById('support-description-id').value;
+
+    newSupportMsgCreated=newSupportMsg(nameSupport,lastNameSupport,emailSupport,nickNameSupport,subjectSupport,descriptionSupport);
+    
+    $popupWrapper.style.display = 'block';
+
+    console.log(newSupportMsgCreated);
+
+    cleanSupportMsg();
+
+    arrNewSupportMsgs.push(newSupportMsgCreated);
+
+    console.log(arrNewSupportMsgs);
+
+    var textToViewSupportMsg = '<div class="content-data" id="content-data-id"><br><br><p>Nome completo: '+arrNewSupportMsgs[count2].name+' '+arrNewSupportMsgs[count2].lastName+'</p><br><p>Apelido: '+arrNewSupportMsgs[count2].nickName+'</p><br><p>E-mail: '+arrNewSupportMsgs[count2].email+'</p><br><p>Assunto: '+arrNewSupportMsgs[count2].subject+'</p><br><p>Mensagem: '+arrNewSupportMsgs[count2].description+'</p></div>'; 
+    document.getElementById('popup-content-flexbox-id').insertAdjacentHTML('beforeend',textToViewSupportMsg);
+
+    count2++;
+  });
+
+  function newSupportMsg(name,lastName,email,nickName,subject,description){
+    return {
+          name,
+          lastName,
+          email,
+          nickName,
+          subject,
+          description
+          }
+  }
+
+  function cleanSupportMsg(){
+    document.getElementById('support-name-id').value = '';
+    document.getElementById('support-lastname-id').value = '';
+    document.getElementById('support-e-mail-id').value = '';
+    document.getElementById('support-nick-name-id').value = '';
+    document.getElementById('support-subject-id').value = '';
+    document.getElementById('support-description-id').value = '';
   }
 
   const json = `[{
