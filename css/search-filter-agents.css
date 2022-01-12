@@ -2,6 +2,7 @@
     display: none;
     margin-left: 112px;
     margin-top: 40px;
+    position: relative;
 }
 .search-field{
     width: 259px;

@@ -345,6 +345,10 @@ window.onload=function(){
 
   let allagents = JSON.parse(json);
 
+  console.log(allagents[0].data.guns.primaryGun);
+  console.log(allagents[0].data.guns.secondaryGun);
+  console.log(allagents[0].data.guns.steel);
+
   var numberOfAgents = allagents[0].data.agents.length;
 
   for(var i=0;i<numberOfAgents;i++){
@@ -409,7 +413,7 @@ window.onload=function(){
     arrNewAgents.push(newAgentCreated);
 
     allagents[0].data.agents.push(newAgentCreated);
-    console.log(allagents[0].data.agents);
+    // console.log(allagents[0].data.agents);
     
     textToAdd = '<div class="agent-div" id="agent-div-id"><img class="agent-img" src="'+arrNewAgents[count].image+'" alt="agente '+arrNewAgents[count].name+'"><div class="agent newAgent'+count+'"><p>'+arrNewAgents[count].name+'</p></div></div>';
     document.getElementById('agents-flexbox-id').insertAdjacentHTML('beforeend',textToAdd)

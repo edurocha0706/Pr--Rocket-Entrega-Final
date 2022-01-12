@@ -143,8 +143,7 @@ body{
     background-image: url(../images/Retângulo\ 90.svg), url(../images/valorant-ep1-ato3-publi.png);
     background-size: fixed;
     opacity: 0.06;
-    /*position: absolute;*/
-    z-index: auto;
+    position: absolute;
 }
 .agents-title h1{
     margin-left: 113px;
