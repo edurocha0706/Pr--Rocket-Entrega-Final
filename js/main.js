@@ -440,7 +440,7 @@ window.onload=function(){
 
     let allagents = JSON.parse(json);
 
-    var numberOfAgents = 11;
+    var numberOfAgents = allagents[0].data.agents.length;
   
     for(var i=0;i<numberOfAgents;i++){
       showAgentOfData(i);
