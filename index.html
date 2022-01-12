@@ -9,7 +9,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script src="js/main.js"></script>
-        <script src="js/json-data.js"></script>
         <script src="js/flickity.pkgd.js"></script>
 
         <link rel="stylesheet" href="css/style.css">
@@ -136,9 +135,7 @@
                 <div class="popup-agent-close">
                     <img class="close-button-image"src="images/close-button.png" alt="botão de fechar popup">
                 </div>
-                <div class="popup-content-flexbox" id="popup-content-flexbox-id">
-                    
-                </div>
+                <div class="popup-content-flexbox" id="popup-content-flexbox-id"></div>
             </div>
         </div>
 
@@ -161,41 +158,29 @@
                                 </select><br>
                                 <select class="add-skills-field" id="skills-field-1" name="">
                                     <option value="0">Habilidade - 1</option>
-                                    <option value="Arma branca">Arma branca</option>
-                                    <option value="Arma primária">Arma primária</option>
-                                    <option value="Arma secundária">Arma secundária</option>
-                                    <option value="Especial">Especial</option>
+                                    <option value="1">Arma branca</option>
                                 </select><br>
                                 <select class="add-skills-field" id="skills-field-2" name="">
                                     <option value="0">Habilidade - 2</option>
-                                    <option value="Arma branca">Arma branca</option>
-                                    <option value="Arma primária">Arma primária</option>
-                                    <option value="Arma secundária">Arma secundária</option>
-                                    <option value="Especial">Especial</option>
+                                    <option value="2">Arma primária</option>
                                 </select><br>
                                 <select class="add-skills-field" id="skills-field-3" name="">
                                     <option value="0">Habilidade - 3</option>
-                                    <option value="Arma branca">Arma branca</option>
-                                    <option value="Arma primária">Arma primária</option>
-                                    <option value="Arma secundária">Arma secundária</option>
-                                    <option value="Especial">Especial</option>
+                                    <option value="3">Arma secundária</option>
                                 </select><br>
                                 <select class="add-skills-field" id="skills-field-4" name="">
                                     <option value="0">Habilidade - 4</option>
-                                    <option value="Arma branca">Arma branca</option>
-                                    <option value="Arma primária">Arma primária</option>
-                                    <option value="Arma secundária">Arma secundária</option>
-                                    <option value="Especial">Especial</option>
+                                    <option value="4">Especial</option>
                                 </select>
                             </form>
                         </div>
                         <div>
                             <form class="form2-popup-add-agent">
                                 <input class="add-description-field" id="description-field" required type="text" maxlength="300" placeholder="Descrição"><br>
-                                <input class="add-damage-field" id="damage-field-1" required type="number text" maxlength="2" placeholder="Dano Habilidade - 1"><br>
-                                <input class="add-damage-field" id="damage-field-2" required type="number text" maxlength="2" placeholder="Dano Habilidade - 2"><br>
-                                <input class="add-damage-field" id="damage-field-3" required type="number text" maxlength="2" placeholder="Dano Habilidade - 3"><br>
-                                <input class="add-damage-field" id="damage-field-4" required type="number text" maxlength="2" placeholder="Dano Habilidade - 4">
+                                <input class="add-damage-field" id="damage-field-1" required type="number" placeholder="Dano Habilidade - 1"><br>
+                                <input class="add-damage-field" id="damage-field-2" required type="number" placeholder="Dano Habilidade - 2"><br>
+                                <input class="add-damage-field" id="damage-field-3" required type="number" placeholder="Dano Habilidade - 3"><br>
+                                <input class="add-damage-field" id="damage-field-4" required type="number" placeholder="Dano Habilidade - 4">
                             </form>
                         </div>
                         <div class="image-new-agent">
@@ -240,7 +225,7 @@
             <br><br><br><br>
             <div class="red-line-2"><hr></div>
 
-            -------- SECTION 2 ------
+            <!-------- SECTION 2 ------>
 
             <section class="section2-flexbox">
                 <div class="section2-title">
@@ -257,48 +242,47 @@
                         <div class="type-of-weapon">
                             <h3>Arma primária</h3>
                         </div>
-                        <div class="primary-weapons js-flickity"
-                            data-flickity-options='{ "cellAlign": "left", "contain": true }'>
-
-                            <div class="prim-weapon"><img src="images/Classic.png" alt="arma Classic"></div>
-                            <div class="prim-weapon"><img src="images/Sheriff.png" alt="arma Sheriff"></div>
-                            <div class="prim-weapon"><img src="images/Frenzy.png" alt="arma Frenzy"></div>
-                            <div class="prim-weapon"><img src="images/Ghost.png" alt="arma Ghost"></div>
-                            <div class="prim-weapon"><img src="images/Shorty.png" alt="arma Shorty"></div>
+                        <div class="carrosel">
+                            <div class="primary-weapons">
+                                <div class="prim-weapon1"><img src="images/Classic.png" alt="arma Classic"></div>
+                                <div class="prim-weapon2"><img src="images/Sheriff.png" alt="arma Sheriff"></div>
+                                <div class="prim-weapon3"><img src="images/Frenzy.png" alt="arma Frenzy"></div>
+                                <div class="prim-weapon4"><img src="images/Ghost.png" alt="arma Ghost"></div>
+                                <div class="prim-weapon5"><img src="images/Shorty.png" alt="arma Shorty"></div>
+                            </div>
                         </div>
 
                         <div class="type-of-weapon">
                             <h3>Arma secundária</h3>
                         </div>
-
-                        <div class="secundary-weapon js-flickity"
-                            data-flickity-options='{ "cellAlign": "left", "contain": true }'>
-
-                            <div class="sec-weapon"><img src="images/Phantom.png" alt="arma Phanton"></div>
-                            <div class="sec-weapon"><img src="images/Vandal.png" alt="arma Vendal"></div>
-                            <div class="sec-weapon"><img src="images/Spectre.png" alt="arma Spectre"></div>
-                            <div class="sec-weapon"><img src="images/Judge.png" alt="arma Judge"></div>
-                            <div class="sec-weapon"><img src="images/Operator.png" alt="arma Operator"></div>
+                        <div class="carrosel">
+                            <div class="secundary-weapon">
+                                <div class="sec-weapon1"><img src="images/Phantom.png" alt="arma Phanton"></div>
+                                <div class="sec-weapon2"><img src="images/Vandal.png" alt="arma Vendal"></div>
+                                <div class="sec-weapon3"><img src="images/Spectre.png" alt="arma Spectre"></div>
+                                <div class="sec-weapon4"><img src="images/Judge.png" alt="arma Judge"></div>
+                                <div class="sec-weapon5"><img src="images/Operator.png" alt="arma Operator"></div>
+                            </div>
                         </div>
+
                         <div class="type-of-weapon">
                             <h3>Arma branca</h3>
                         </div>
-
-                        <div class="white-gun js-flickity"
-                        data-flickity-options='{ "cellAlign": "left", "contain": true }'>
-                        
-                        <div class="w-gun"><img src="images/771c7d8cfc12ad01d9e6c2eee17594c6-removebg-preview.png" alt="faca colorida"></div>
-                        <div class="w-gun"><img src="images/9a703a6cd79c266d99d697368842453b-removebg-preview.png" alt="machado amarelo"></div>
-                        <div class="w-gun"><img src="images/c5baa13eeead850318d1837a16c7cc5e-removebg-preview.png" alt="machado rosa"></div>
-                        <div class="w-gun"><img src="images/87c1fd9d48330283ffa290544dd809bd-removebg-preview.png" alt="faca preta e amarela"></div>
-                    </div>
+                        <div class="carrosel">
+                            <div class="steel-weapon">
+                            <div class="stl-weapon1"><img src="images/771c7d8cfc12ad01d9e6c2eee17594c6-removebg-preview.png" alt="faca colorida"></div>
+                            <div class="stl-weapon2"><img src="images/9a703a6cd79c266d99d697368842453b-removebg-preview.png" alt="machado amarelo"></div>
+                            <div class="stl-weapon3"><img src="images/c5baa13eeead850318d1837a16c7cc5e-removebg-preview.png" alt="machado rosa"></div>
+                            <div class="stl-weapon4"><img src="images/87c1fd9d48330283ffa290544dd809bd-removebg-preview.png" alt="faca preta e amarela"></div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="address2-flexbox">
                         <img src="images/V_AGENTS_587x900_Cypher.png" alt="agente Cypher">
                     </div>
- 
                 </div>
+
             </section>
 
             
