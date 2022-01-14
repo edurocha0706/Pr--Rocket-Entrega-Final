@@ -7,8 +7,8 @@
         <meta name="description" content="Rocket Talent - Entrega Final Pré-Rocket">
         <meta name="keyword" content="html5, tecnologia">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <script src="js/main.js"></script>
+        <script src="js/carousel.js"></script>
         <script src="js/flickity.pkgd.js"></script>
 
         <link rel="stylesheet" href="css/style.css">
@@ -227,62 +227,53 @@
 
             <!-------- SECTION 2 ------>
 
-            <section class="section2-flexbox">
-                <div class="section2-title">
+            <section class="section2">
+                <div class="section2-flexbox">
                     <div class="title-div">
                         <h1>ESCOLHA A SUA ARMA</h1>
                     </div>
-                    <div class="target-image">
-                        <img src="images/Grupo 511.svg" alt="alvo">
+                    <div class="target-image-div">
+                        <img class="target-image" src="images/Grupo 511.svg" alt="alvo">
                     </div>
                 </div>
 
-                <div class="gallery-weapons">
-                    <div class="galleru-weapons-flexbox">
-                        <div class="type-of-weapon">
-                            <h3>Arma primária</h3>
+                <div class="gallery-guns-flexbox">
+                    <div class="gallery-guns">
+                        <h3>Arma primária</h3>
+                        <div class="carousel-1">
+                            <div class="slideshow-1">
+                                <div class="guns-images" id="images-slideshow-1"></div>
+                                <div class="red-arrows">
+                                    <span class="prev"><img src="images/Caminho 255.svg"></span>
+                                    <span class="next"><img src="images/Caminho 256.svg"></span>
+                                </div>
+                            </div>                            
                         </div>
-                        <div class="carrosel">
-                            <div class="primary-weapons">
-                                <div class="prim-weapon1"><img src="images/Classic.png" alt="arma Classic"></div>
-                                <div class="prim-weapon2"><img src="images/Sheriff.png" alt="arma Sheriff"></div>
-                                <div class="prim-weapon3"><img src="images/Frenzy.png" alt="arma Frenzy"></div>
-                                <div class="prim-weapon4"><img src="images/Ghost.png" alt="arma Ghost"></div>
-                                <div class="prim-weapon5"><img src="images/Shorty.png" alt="arma Shorty"></div>
-                            </div>
+                        <h3>Arma secundária</h3>
+                        <div class="carousel-2">
+                            <div class="slideshow-2">
+                                <div class="guns-images" id="images-slideshow-2"></div>
+                                <div class="red-arrows">
+                                    <span class="prev"><img src="images/Caminho 255.svg"></span>
+                                    <span class="next"><img src="images/Caminho 256.svg"></span>
+                                </div>
+                            </div>                            
                         </div>
-
-                        <div class="type-of-weapon">
-                            <h3>Arma secundária</h3>
-                        </div>
-                        <div class="carrosel">
-                            <div class="secundary-weapon">
-                                <div class="sec-weapon1"><img src="images/Phantom.png" alt="arma Phanton"></div>
-                                <div class="sec-weapon2"><img src="images/Vandal.png" alt="arma Vendal"></div>
-                                <div class="sec-weapon3"><img src="images/Spectre.png" alt="arma Spectre"></div>
-                                <div class="sec-weapon4"><img src="images/Judge.png" alt="arma Judge"></div>
-                                <div class="sec-weapon5"><img src="images/Operator.png" alt="arma Operator"></div>
-                            </div>
-                        </div>
-
-                        <div class="type-of-weapon">
-                            <h3>Arma branca</h3>
-                        </div>
-                        <div class="carrosel">
-                            <div class="steel-weapon">
-                            <div class="stl-weapon1"><img src="images/771c7d8cfc12ad01d9e6c2eee17594c6-removebg-preview.png" alt="faca colorida"></div>
-                            <div class="stl-weapon2"><img src="images/9a703a6cd79c266d99d697368842453b-removebg-preview.png" alt="machado amarelo"></div>
-                            <div class="stl-weapon3"><img src="images/c5baa13eeead850318d1837a16c7cc5e-removebg-preview.png" alt="machado rosa"></div>
-                            <div class="stl-weapon4"><img src="images/87c1fd9d48330283ffa290544dd809bd-removebg-preview.png" alt="faca preta e amarela"></div>
-                            </div>
+                        <h3>Arma branca</h3>
+                        <div class="carousel-3">
+                            <div class="slideshow-3">
+                                <div class="guns-images" id="images-slideshow-3"></div>
+                                <div class="red-arrows">
+                                    <span class="prev"><img src="images/Caminho 255.svg"></span>
+                                    <span class="next"><img src="images/Caminho 256.svg"></span>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
-
-                    <div class="address2-flexbox">
+                    <div class="image-agent-with-gun">
                         <img src="images/V_AGENTS_587x900_Cypher.png" alt="agente Cypher">
                     </div>
                 </div>
-
             </section>
 
             
@@ -321,7 +312,7 @@
                             <input class="support-e-mail-field" id="support-e-mail-id" required type="email" maxlength="50" placeholder="E-mail">
                             <input class="support-nick-name-field" id="support-nick-name-id" required type="text" maxlength="50" placeholder="Apelido do jogador"><br>
                             <input class="support-subject-field" id="support-subject-id" required type="text" maxlength="50" placeholder="Assunto"><br>
-                            <textarea style="resize:none" class="support-description-field" id="support-description-id" required type="text" maxlength="500" placeholder="Descrição"></textarea>
+                            <textarea class="support-description-field" id="support-description-id" required type="text" maxlength="500" placeholder="Descrição"></textarea>
                         </form>
                         <div class="send-support-button-div">
                             <a class="send-support-button" href="#" title="Enviar">Enviar</a>

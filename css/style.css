@@ -147,6 +147,7 @@ body{
 }
 .agents-title h1{
     margin-left: 113px;
+    font-size: 40px;
 }
 
 .agents-title{
@@ -261,6 +262,99 @@ hr{
     margin-left: 40%;
 }
 
+.section2{
+    width: 100%;
+    height: 972.02px;
+    margin-top: 169.98px;
+}
+
+.section2-flexbox{
+    display: flex;
+    flex-direction: row;
+}
+
+.title-div h1{
+    font-family: 'Poppins-light';
+    font-size: 40px;
+    margin-left: 112px;
+    line-height: 38px;
+}
+
+.target-image-div{
+    margin-left: 40px;
+}
+
+.target-image{
+    width: 79.03px;
+    height: 79.03px;
+}
+
+.gallery-guns h3{
+    font-family: 'Poppins-Regular';
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 45px;
+    margin-left: 112px;
+}
+
+.gallery-guns-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.carousel-1, .carousel-2, .carousel-3{
+    width: 425.5px;
+    height: 195px;
+    margin-top: 38px;
+    margin-left: 63px;
+}
+
+.slideshow-1, .slideshow-2, .slideshow-3{
+    position: relative;
+}
+
+.guns-images{
+    width: 325px;
+    height: 194px;
+    margin-left: 49.53px;
+    border: 1px solid #ffffff;
+}
+
+.carousel-1 figure, .carousel-2 figure,.carousel-3 figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100px;
+    position: absolute;
+}
+
+.carousel-1 figure.show, .carousel-2 figure.show, .carousel-3 figure.show{
+    opacity: 1;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 87px;
+    cursor: pointer;
+}
+
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+
+.image-agent-with-gun{
+    width: 530px;
+    height: 813px;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 140px;
+}
+
 .section3{
     width: 100%;
     height: 732.95;
@@ -268,6 +362,11 @@ hr{
     color: #ffffff;
     margin-top: 400.53px;    
 }
+
+.section3 h1{
+    font-size: 48px; 
+}
+
 
 .section3-flexbox{
     display: flex;
@@ -362,6 +461,7 @@ hr{
     color: #04254c;
     line-height: 0;
     font-family: 'Poppins-light';
+    font-size: 48px;
 }
 
 .support-form input::placeholder{
@@ -376,7 +476,7 @@ textarea::placeholder{
 }
 
 .support-form{
-    margin-top: 63px;
+    margin-top: 80px;
 }
 
 .support-name-field, .support-lastname-field, .support-nick-name-field, .support-subject-field, .support-description-field{
@@ -389,14 +489,14 @@ textarea::placeholder{
 
 .support-name-field{
     width: 327px;
-    height: 53px;
+    height: 50px;
     margin-right: 24px;
     margin-bottom: 24px;
 }
 
 .support-lastname-field{
     width: 327px;
-    height: 53px;
+    height: 50px;
     margin-bottom: 24px;
 }
 
@@ -408,26 +508,27 @@ textarea::placeholder{
     margin-right: 24px;
     margin-bottom: 21px;
     width: 327px;
-    height: 53px;
+    height: 50px;
     padding-left: 16px;
 }
 
 .support-nick-name-field{
     width: 327px;
-    height: 53px;
+    height: 50px;
     margin-bottom: 24px;
 }
 
 .support-subject-field{
     width: 704px;
-    height: 53px;
+    height: 50px;
     margin-bottom: 24px;
 }
 
 .support-description-field{
     width: 704px;
-    height: 136px;
+    height: 126px;
     padding-top: 16px;
+    resize: none;
 }
 
 .image-support-div{
