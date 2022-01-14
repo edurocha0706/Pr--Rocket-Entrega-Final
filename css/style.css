@@ -145,6 +145,7 @@ body{
     opacity: 0.06;
     position: absolute;
 }
+
 .agents-title h1{
     margin-left: 113px;
     font-size: 40px;
@@ -262,13 +263,56 @@ hr{
     margin-left: 40%;
 }
 
+.section1{
+    width: 100%;
+    height: 620px;
+}
+
+.section1 h1{
+    margin-left: 113px;
+}
+
+.carousel-0{
+    width: 100%;
+    height: 500px;
+    margin-top: 38px;
+    margin-left: 112px;
+    overflow-y: hidden;
+}
+
+.maps-images{
+    display: flex;
+    flex-direction: row;
+}
+
+.image-map{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.carousel-0 figure{
+    width: 100%;
+    margin: 0px 30px 0px 0px;
+}
+
+.section1 p{
+    font-family: 'Poppins-Medium';
+    font-size: 24px;
+    color: #e13157;
+    float: right;
+    margin-top: 34px;
+    margin-right: 34px;
+}
+/*-----------------------------------------*/
+
 .section2{
     width: 100%;
     height: 972.02px;
     margin-top: 169.98px;
 }
 
-.section2-flexbox{
+.title-flexbox{
     display: flex;
     flex-direction: row;
 }
@@ -281,6 +325,7 @@ hr{
 }
 
 .target-image-div{
+    margin-top: 5px;
     margin-left: 40px;
 }
 
@@ -330,6 +375,21 @@ hr{
     position: absolute;
 }
 
+.carousel-1 figure{
+    top: 25px;
+}
+
+.carousel-2 figure{
+    top: 45px;
+    right: 210px;
+}
+
+.carousel-3 figure{
+    bottom: -18px;
+    left: 75px;
+    
+}
+
 .carousel-1 figure.show, .carousel-2 figure.show, .carousel-3 figure.show{
     opacity: 1;
 }
@@ -351,7 +411,7 @@ hr{
     width: 530px;
     height: 813px;
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 70px;
     margin-right: 140px;
 }
 
@@ -558,55 +618,5 @@ textarea::placeholder{
     color: #ffffff;
     border-radius: 5px;    
 }
-
-/* Carrosel de mapas - INÍCIO*/
-
-.section1-flexbox{
-    margin-top: 34px;
-    margin-left: 112px;
-}
-
-.section1 h1{
-    margin-left: 113px;
-}
-
-.gallery img{
-    border-radius: 10px;
-}
-
-.map{
-    width: 400px;
-    margin-right: 10px;
-    margin-left: 112px;
-}
-
-.flickity-prev-next-button{
-    background: transparent;
-}
-
-.flickity-prev-next-button .no-svg {
-    color: white;
-}
-.flickity-prev-next-button:hover {
-    background: transparent;
-}
-
-.flickity-prev-next-button:disabled {
-    display: none;
-}
-
-.flickity-page-dots .dot {
-    width: 12px;
-    height: 12px;
-    opacity: 1;
-    background: transparent;
-    border: 2px solid white;
-}
-
-.flickity-page-dots .dot.is-selected {
-    background: #e13157;
-}
-
-/* Carrosel de mapas - FIM*/
 
 

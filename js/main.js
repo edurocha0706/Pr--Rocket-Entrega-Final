@@ -364,7 +364,7 @@ window.onload=function(){
 
   // --- FIM --- Mostra os agentes que constam no banco de dados.
 
-  // --- INÍCIO --- Mostra as imagens nos carroséis de armas.
+  // --- INÍCIO --- Carroséis de armas.
 
   var numberOfGunsCarousel1 = allagents[0].data.guns.primaryGun.length
 
@@ -373,7 +373,7 @@ window.onload=function(){
   }
 
   function addGunsInCarousel1(aux){
-    var textToAddGuns1 = '<figure><img src="'+allagents[0].data.guns.primaryGun[aux]+'" alt="arma Sheriff2"></figure>';
+    var textToAddGuns1 = '<figure><img src="'+allagents[0].data.guns.primaryGun[aux]+'" alt="imagem de arma"></figure>';
     document.getElementById('images-slideshow-1').insertAdjacentHTML('beforeend',textToAddGuns1);
   }
 
@@ -384,7 +384,7 @@ window.onload=function(){
   }
 
   function addGunsInCarousel2(aux){
-    var textToAddGuns2 = '<figure><img src="'+allagents[0].data.guns.secondaryGun[aux]+'" alt="arma Sheriff2"></figure>';
+    var textToAddGuns2 = '<figure><img src="'+allagents[0].data.guns.secondaryGun[aux]+'" alt="imagem de arma"></figure>';
     document.getElementById('images-slideshow-2').insertAdjacentHTML('beforeend',textToAddGuns2);
   }
 
@@ -396,11 +396,47 @@ window.onload=function(){
   }
 
   function addGunsInCarousel3(aux){
-    var textToAddGuns3 = '<figure><img src="'+allagents[0].data.guns.steel[aux]+'" alt="arma Sheriff2"></figure>';
+    var textToAddGuns3 = '<figure><img src="'+allagents[0].data.guns.steel[aux]+'" alt="imagem de arma"></figure>';
     document.getElementById('images-slideshow-3').insertAdjacentHTML('beforeend',textToAddGuns3);
   }
   
-  // --- FIM --- Mostra as imagens nos carroséis de armas.
+  var carouselImgs = new Carousel({
+    container: '.carousel-1 .slideshow-1',
+    itens: 'figure',
+    btnPrev: '.prev',
+    btnNext: '.next'
+  })
+
+  var carouselImgs = new Carousel({
+    container: '.carousel-2 .slideshow-2',
+    itens: 'figure',
+    btnPrev: '.prev',
+    btnNext: '.next'
+  })
+
+  var carouselImgs = new Carousel({
+    container: '.carousel-3 .slideshow-3',
+    itens: 'figure',
+    btnPrev: '.prev',
+    btnNext: '.next'
+  })
+
+  // --- FIM --- Carroséis de armas.
+
+  // --- INÍCIO --- Scroll de mapas.
+
+  var numberOfMapsCarousel = allagents[0].data.maps.length
+
+  for(var i=0;i<numberOfMapsCarousel;i++){
+    addMapsInCarousel(i);
+  }
+
+  function addMapsInCarousel(aux){
+    var textToAddMaps = '<figure><img class="image-map" src="'+allagents[0].data.maps[aux]+'" alt="imagem de mapa"></figure>';
+    document.getElementById('maps-slideshow-id').insertAdjacentHTML('beforeend',textToAddMaps);
+  }
+
+  // --- FIM --- Scroll de mapas.
 
   // --- INÍCIO --- Cria novos agentes.
 
@@ -561,30 +597,4 @@ window.onload=function(){
     }
 
   // --- FIM --- Mostrar na tela os dados do "formulário Suporte".
-
-  // --- INÍCIO --- Carrosel de imagens (armas).
-
-  var carouselImgs = new Carousel({
-    container: '.carousel-1 .slideshow-1',
-    itens: 'figure',
-    btnPrev: '.prev',
-    btnNext: '.next'
-  })
-
-  var carouselImgs = new Carousel({
-    container: '.carousel-2 .slideshow-2',
-    itens: 'figure',
-    btnPrev: '.prev',
-    btnNext: '.next'
-  })
-
-  var carouselImgs = new Carousel({
-    container: '.carousel-3 .slideshow-3',
-    itens: 'figure',
-    btnPrev: '.prev',
-    btnNext: '.next'
-  })
-
-  // --- FIM --- Carrosel de imagens (armas).
-
 }

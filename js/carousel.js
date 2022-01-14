@@ -6,8 +6,10 @@ function Carousel(config){
     
     var _this = this;
     var _currentSlide = 0
-    
+
+    if(_this.btnNext !== null && _this.btnPrev !== null){
     init()
+    }
     
     function init(){
         var _show = _this.container.querySelectorAll('.show')
@@ -16,6 +18,7 @@ function Carousel(config){
             sh.classList.remove('show')
         })
         _this.itens[0].classList.add('show')
+        
         _this.btnNext.removeAttribute('style')
         _this.btnPrev.removeAttribute('style')
         
