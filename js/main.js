@@ -1,52 +1,13 @@
 window.onload=function(){
   'use strict';
 
-  var $popupClose = document.querySelector('.popup-agent-close');
-  var $popupWrapper = document.querySelector('.popup-wrapper');
-
-  $popupClose.addEventListener('click', function(){
-    $popupWrapper.style.display = 'none';
-    document.getElementById('content-data-id').remove();
-    document.getElementById('content-image-id').remove();
-  });
-
-  var $seeAllDiv = document.querySelector('.seeall-div-text')
-  var $searchFilterFlexbox = document.querySelector('.search-filter-flexbox');
-  var $addDivText = document.querySelector('.add-div-text');
-
-  $seeAllDiv.addEventListener('click', function(){
-    
-    $seeAllDiv.remove();
-    $searchFilterFlexbox.style.display = 'block';
-    $addDivText.style.display = 'block';
-    
-  });
-
-  var $addDivText = document.querySelector('.add-div-text');
-  var $popupClose = document.querySelector('.popup-add-close');
-  var $popupAdd = document.querySelector('.popup-add');
-  
-  $addDivText.addEventListener('click', function(){
-    $popupAdd.style.display = 'block';
-  });
-  $popupClose.addEventListener('click', function(){
-    $popupAdd.style.display = 'none';
-  });
-
-  var $cancelButton = document.querySelector('.cancel-button');
-
-  $cancelButton.addEventListener('click', function(){
-    $popupAdd.style.display = 'none';
-    
-  });
-
   // --- INÍCIO --- Mostra os agentes que constam no banco de dados.
 
     const json = `[{
       "data": {
         "agents": [
           {
-            "name": "Jett",
+            "name": "JETT",
             "function0": "Duelista",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -70,7 +31,7 @@ window.onload=function(){
             "image": "./agents/jett.png"
           },
           {
-            "name": "Raze",
+            "name": "RAZE",
             "function0": "Sentinela",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -94,7 +55,7 @@ window.onload=function(){
             "image": "./agents/raze.png"
           },
           {
-            "name": "Breach",
+            "name": "BREACH",
             "function0": "Duelista",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -118,7 +79,7 @@ window.onload=function(){
             "image": "./agents/breach.png"
           },
           {
-            "name": "Omen",
+            "name": "OMEN",
             "function0": "Controlador",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -142,7 +103,7 @@ window.onload=function(){
             "image": "./agents/omen.png"
           },
           {
-            "name": "Brimstone",
+            "name": "BRIMSTONE",
             "function0": "Iniciador",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -166,7 +127,7 @@ window.onload=function(){
             "image": "./agents/brimstone.png"
           },
           {
-            "name": "Phoenix",
+            "name": "PHOENIX",
             "function0": "Duelista",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -190,7 +151,7 @@ window.onload=function(){
             "image": "./agents/phoenix.png"
           },
           {
-            "name": "Sage",
+            "name": "SAGE",
             "function0": "Iniciador",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -214,7 +175,7 @@ window.onload=function(){
             "image": "./agents/sage.png"
           },
           {
-            "name": "Sova",
+            "name": "SOVA",
             "function0": "Duelista",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -238,7 +199,7 @@ window.onload=function(){
             "image": "./agents/sova.png"
           },
           {
-            "name": "Viper",
+            "name": "VIPER",
             "function0": "Duelista",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -262,7 +223,7 @@ window.onload=function(){
             "image": "./agents/viper.png"
           },
           {
-            "name": "Cypher",
+            "name": "CYPHER",
             "function0": "Controlador",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -286,7 +247,7 @@ window.onload=function(){
             "image": "./agents/cypher.png"
           },
           {
-            "name": "Reyna",
+            "name": "REYNA",
             "function0": "Iniciador",
             "description": "Devonshire rex. Devonshire rex birman but sphynx savannah panther lynx british shorthair. Tiger. Burmese british shorthair savannah but ocicat siamese for norwegian forest. American shorthair cornish rex american bobtail puma sphynx. Tabby munchkin savannah turkish angora, siamese yet tabby. Siberian grimalkin, birman so lynx but abyssinian tomcat. Ocicat scottish fold but devonshire rex.",
             "skills": [
@@ -343,26 +304,83 @@ window.onload=function(){
       }
     }]`
 
-    let allagents = JSON.parse(json);
-
+    var allagents = JSON.parse(json);
     var numberOfAgents = allagents[0].data.agents.length;
-
+    
     for(var i=0;i<numberOfAgents;i++){
+      createCardOfAgent(i);
       showAgentOfData(i);
     }
+        
+    var textToView3 = '<div class="add-div-text"><h2>adicionar</h2></div>';
+    document.getElementById('agents-flexbox-id').insertAdjacentHTML('afterbegin',textToView3);
+
     
+  
+    function createCardOfAgent(agtX){
+      var agt = agtX;      
+      var textToView5 = '<li><div class="agent-div" id="agent'+(agtX+1)+'-id"><img class="agent-img" src="'+allagents[0].data.agents[agt].image+'" alt="agente"><div class="agent agent'+agtX+'"><p>'+allagents[0].data.agents[agt].name+'</p></div></div></li>';
+      document.getElementById('agents-flexbox-id').insertAdjacentHTML('beforeend',textToView5);
+    }
+
+    
+
     function showAgentOfData(agtX){
       var agt = agtX;
       var $agentId = document.querySelector('.agent'+agtX);
       
       var textToView2 = '<div class="content-data" id="content-data-id"><h3>FUNÇÃO</h3><p class="function">'+allagents[0].data.agents[agt].function0+'</p><p class="description">'+allagents[0].data.agents[agt].description+'</p><h3>HABILIDADES</h3><div class="skills-flexbox"><div class="types-of-weapons"><p>'+'Arma branca'+'</p><p>'+'Arma primária'+'</p><p>'+'Arma secundária'+'</p><p>'+'Especial'+'</p></div><div class="damages"><p>'+allagents[0].data.agents[agt].skills[0].damage+' Dano</p><p>'+allagents[0].data.agents[agt].skills[1].damage+' Dano</p><p>'+allagents[0].data.agents[agt].skills[2].damage+' Dano</p><p>'+allagents[0].data.agents[agt].skills[3].damage+' Dano</p></div></div></div><div class="content-image" id="content-image-id"><img class="agent-img" src="'+allagents[0].data.agents[agt].image+'" alt="imagem do agente"></div>';
+      
+      
       $agentId.addEventListener('click', function(){
         document.getElementById('popup-content-flexbox-id').insertAdjacentHTML('beforeend',textToView2);
         $popupWrapper.style.display = 'block';
       })
     }
 
+    var textToView4 = '<div class="seeall-div-text"><h2>ver todos</h2></div>';
+    document.getElementById('agents-flexbox-id').insertAdjacentHTML('beforeend',textToView4);
+
   // --- FIM --- Mostra os agentes que constam no banco de dados.
+
+  var $popupClose = document.querySelector('.popup-agent-close');
+  var $popupWrapper = document.querySelector('.popup-wrapper');
+
+  $popupClose.addEventListener('click', function(){
+    $popupWrapper.style.display = 'none';
+    document.getElementById('content-data-id').remove();
+    document.getElementById('content-image-id').remove();
+  });
+
+  var $seeAllDiv = document.querySelector('.seeall-div-text')
+  var $searchFilterFlexbox = document.querySelector('.search-filter-flexbox');
+  var $addDivText = document.querySelector('.add-div-text');
+
+  $seeAllDiv.addEventListener('click', function(){
+    
+    $seeAllDiv.remove();
+    $searchFilterFlexbox.style.display = 'block';
+    $addDivText.style.display = 'block';
+    
+  });
+
+  var $addDivText = document.querySelector('.add-div-text');
+  var $popupClose = document.querySelector('.popup-add-close');
+  var $popupAdd = document.querySelector('.popup-add');
+  
+  $addDivText.addEventListener('click', function(){
+    $popupAdd.style.display = 'block';
+  });
+  $popupClose.addEventListener('click', function(){
+    $popupAdd.style.display = 'none';
+  });
+
+  var $cancelButton = document.querySelector('.cancel-button');
+
+  $cancelButton.addEventListener('click', function(){
+    $popupAdd.style.display = 'none';
+    
+  });
 
   // --- INÍCIO --- Carroséis de armas.
 
@@ -461,7 +479,7 @@ window.onload=function(){
     var count = 0;
 
     $saveButton.addEventListener('click', function(){
-      name = document.getElementById('name-field').value;
+      name = document.getElementById('name-field').value.toUpperCase();
       function0 = document.getElementById('function-field').value;
       description = document.getElementById('description-field').value;
       type1 = parseInt(document.getElementById('skills-field-1').value);
@@ -481,11 +499,10 @@ window.onload=function(){
       cleanAgentsField();
       
       arrNewAgents.push(newAgentCreated);
-
       allagents[0].data.agents.push(newAgentCreated);
       // console.log(allagents[0].data.agents);
       
-      textToAdd = '<div class="agent-div" id="agent-div-id"><img class="agent-img" src="'+arrNewAgents[count].image+'" alt="agente '+arrNewAgents[count].name+'"><div class="agent newAgent'+count+'"><p>'+arrNewAgents[count].name+'</p></div></div>';
+      textToAdd = '<li><div class="agent-div" id="agent'+(allagents[0].data.agents.length+count)+'-id"><img class="agent-img" src="'+arrNewAgents[count].image+'" alt="agente '+arrNewAgents[count].name+'"><div class="agent newAgent'+count+'"><p>'+arrNewAgents[count].name+'</p></div></div></li>';
       document.getElementById('agents-flexbox-id').insertAdjacentHTML('beforeend',textToAdd)
 
       showNewAgents(count);
@@ -597,4 +614,24 @@ window.onload=function(){
     }
 
   // --- FIM --- Mostrar na tela os dados do "formulário Suporte".
+  
+  // --- INÍCIO --- Busca de agentes (por nome).
+
+  const $inputSearchField = document.querySelector('#search-field-id');
+  $inputSearchField.addEventListener('input', searchByName);
+  
+  function searchByName(e) {
+      
+    var divsAgents = document.getElementById("agents-flexbox-id");
+    var divOfOneAgent = divsAgents.getElementsByTagName('li');
+    for(var i=0;i<allagents[0].data.agents.length;i++){
+      if(allagents[0].data.agents[i].name.includes(e.target.value.toUpperCase())){
+        divOfOneAgent[i].style.display = "block";
+      } else {
+        divOfOneAgent[i].style.display = "none";
+      }
+    }
+  }
+
+  // --- FIM --- Busca de agentes (por nome).
 }

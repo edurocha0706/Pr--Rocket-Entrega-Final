@@ -55,77 +55,28 @@
 
             <div class="search-filter-flexbox">
                 
-                <input class="search-field" required maxlength="30" placeholder="Pesquisar agentes...">
+                <input class="search-field" id="search-field-id" required maxlength="30" placeholder="Pesquisar agentes...">
                 
                 <div class="filter-agents-flexbox">
                     <h4>Filtrar agentes</h4>
                     <select class="skills-field" name="">
-                        <option value="0">Selecione uma habilidade</option>
-                        <option value="Arma branca">Arma branca</option>
-                        <option value="Arma primária">Arma primária</option>
-                        <option value="Arma secundária">Arma secundária</option>
-                        <option value="Especial">Especial</option>
+                        <option value="00">Selecione uma habilidade</option>
+                        <option value="1">Arma branca</option>
+                        <option value="2">Arma primária</option>
+                        <option value="3">Arma secundária</option>
+                        <option value="4">Especial</option>
                     </select>
                     <select class="filter-field" name="">
                         <option value="00">Selecione um filtro</option>
-                        <option value="maior-menor">Filtrar do maior para o menor</option>
-                        <option value="menor-maior">Filtrar do menor para o maior</option>
+                        <option value="0">com dano menor que</option>
+                        <option value="1">com dano maior que</option>
                     </select>
                     <input class="damage-field" type="number" min="0" max="100" placeholder="Informe o valor do dano">
                     <input class="filter-button" type="button" value="FILTRAR">
                 </div>
             </div>
 
-            <div class="agents-flexbox" id="agents-flexbox-id">
-                <div class="add-div-text"><h2>adicionar</h2></div>
-
-                <div class="agent-div">    
-                    <img class="agent-img" src="images/V_AGENTS_587x900_Jett.png" alt="agente Jeff">       
-                    <div class="agent agent0" id="agentX1"><p>JETT</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_ALL_Raze_2.png" alt="agente Raze">  
-                    <div class="agent agent1"><p>RAZE</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_Breach.png" alt="agente Breach">  
-                    <div class="agent agent2"><p>BREACH</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_Omen.png" alt="agente Omen">  
-                    <div class="agent agent3"><p>OMEN</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_Brimstone.png" alt="agente Brimstone">  
-                    <div class="agent agent4"><p>BRIMSTONE</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_Phx.png" alt="agente Phoenix">  
-                    <div class="agent agent5"><p>PHOENIX</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_sage.png" alt="agente Sage">  
-                    <div class="agent agent6"><p>SAGE</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_ALL_Sova_2.png" alt="agente Sova">  
-                    <div class="agent agent7"><p>SOVA</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_Viper.png" alt="agente Viper">  
-                    <div class="agent agent8"><p>VIPER</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_Cypher-1.png" alt="agente Cypher">  
-                    <div class="agent agent9"><p>CYPHER</p></div>
-                </div>
-                <div class="agent-div">
-                    <img class="agent-img" src="images/V_AGENTS_587x900_Reyna.png" alt="agente Reyna">  
-                    <div class="agent agent10"><p>REYNA</p></div>
-                </div>
-
-                <div class="seeall-div-text"><h2>ver todos</h2></div>
-            </div>
+            <div class="agents-flexbox" id="agents-flexbox-id"></div>
         </div>
 
         <div class="popup-wrapper">

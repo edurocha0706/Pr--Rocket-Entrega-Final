@@ -173,6 +173,10 @@ body{
     text-align: center;
 }
 
+#agents-flexbox-id li{
+    display: block;
+}
+
 .agent-div{
     width: 250px;
     height: 300px;
