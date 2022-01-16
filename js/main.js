@@ -622,16 +622,186 @@ window.onload=function(){
   
   function searchByName(e) {
       
-    var divsAgents = document.getElementById("agents-flexbox-id");
-    var divOfOneAgent = divsAgents.getElementsByTagName('li');
+    var divsAgents1 = document.getElementById("agents-flexbox-id");
+    var divOfOneAgent1 = divsAgents1.getElementsByTagName('li');
     for(var i=0;i<allagents[0].data.agents.length;i++){
       if(allagents[0].data.agents[i].name.includes(e.target.value.toUpperCase())){
-        divOfOneAgent[i].style.display = "block";
+        divOfOneAgent1[i].style.display = "block";
       } else {
-        divOfOneAgent[i].style.display = "none";
+        divOfOneAgent1[i].style.display = "none";
       }
     }
   }
 
   // --- FIM --- Busca de agentes (por nome).
+
+  // --- INÍCIO --- Filtro de agentes (por dano).
+
+  var $filterButton = document.querySelector('.filter-button');
+
+  $filterButton.addEventListener('click', function(){
+
+    var selectSkills = document.getElementById('skills-field-id');
+    var selectedValueOfSkills = selectSkills.options[selectSkills.selectedIndex].value;
+    console.log(selectedValueOfSkills);
+
+    var selectCondition = document.getElementById('filter-field-id');
+    var selectedValueOfCondition = selectCondition.options[selectCondition.selectedIndex].value;
+    console.log(selectedValueOfCondition);
+
+    var damageByUser = document.getElementById("damage-field-id").value;
+    console.log(damageByUser);
+    
+    switch (selectedValueOfSkills){
+      case '1':
+        if(selectedValueOfCondition === 'menor'){
+          compareValuesLessThan(damageByUser,selectedValueOfSkills)}
+        if(selectedValueOfCondition === 'maior'){
+          compareValuesBiggerThen(damageByUser,selectedValueOfSkills)}
+        if(selectedValueOfCondition === 'igual'){
+          compareValuesEqualsTo(damageByUser,selectedValueOfSkills)}
+        break;
+      case '2':
+        if(selectedValueOfCondition === 'menor'){
+          compareValuesLessThan(damageByUser,selectedValueOfSkills)}
+        if(selectedValueOfCondition === 'maior'){
+          compareValuesBiggerThen(damageByUser,selectedValueOfSkills)}
+        if(selectedValueOfCondition === 'igual'){
+          compareValuesEqualsTo(damageByUser,selectedValueOfSkills)}
+        break;
+      case '3':
+        if(selectedValueOfCondition === 'menor'){
+          compareValuesLessThan(damageByUser,selectedValueOfSkills)}
+        if(selectedValueOfCondition === 'maior'){
+          compareValuesBiggerThen(damageByUser,selectedValueOfSkills)}
+        if(selectedValueOfCondition === 'igual'){
+          compareValuesEqualsTo(damageByUser,selectedValueOfSkills)}
+        break;
+      case '4':
+        if(selectedValueOfCondition === 'menor'){
+          compareValuesLessThan(damageByUser,selectedValueOfSkills)}
+        if(selectedValueOfCondition === 'maior'){
+          compareValuesBiggerThen(damageByUser,selectedValueOfSkills)}
+        if(selectedValueOfCondition === 'igual'){
+          compareValuesEqualsTo(damageByUser,selectedValueOfSkills)}
+        break;
+    }    
+  });
+
+  var divsAgents2 = document.getElementById("agents-flexbox-id");
+  var divOfOneAgent2 = divsAgents2.getElementsByTagName('li');
+
+  function compareValuesLessThan(value, skill){
+    switch(skill){
+      case '1':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[0].damage < value)
+            divOfOneAgent2[i].style.display = "block";
+          else
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+      case '2':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[1].damage < value)
+            divOfOneAgent2[i].style.display = "block";
+          else 
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+      case '3':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[2].damage < value)
+            divOfOneAgent2[i].style.display = "block";
+          else
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+      case '4':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[3].damage < value)
+            divOfOneAgent2[i].style.display = "block";
+          else
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+    }   
+  }
+  
+  function compareValuesBiggerThen(value, skill){
+    switch(skill){
+      case '1':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[0].damage > value)
+            divOfOneAgent2[i].style.display = "block";
+          else
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+      case '2':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[1].damage > value)
+            divOfOneAgent2[i].style.display = "block";
+          else 
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+      case '3':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[2].damage > value)
+            divOfOneAgent2[i].style.display = "block";
+          else
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+      case '4':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[3].damage > value)
+            divOfOneAgent2[i].style.display = "block";
+          else
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+    } 
+  }
+
+  function compareValuesEqualsTo(value, skill){
+    switch(skill){
+      case '1':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[0].damage == value)
+            divOfOneAgent2[i].style.display = "block";
+          else
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+      case '2':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[1].damage == value)
+            divOfOneAgent2[i].style.display = "block";
+          else 
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+      case '3':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[2].damage == value)
+            divOfOneAgent2[i].style.display = "block";
+          else
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+      case '4':
+        for(var i=0;i<allagents[0].data.agents.length;i++){
+          if(allagents[0].data.agents[i].skills[3].damage == value)
+            divOfOneAgent2[i].style.display = "block";
+          else
+            divOfOneAgent2[i].style.display = "none";
+        }
+        break;
+    } 
+  }
+
+  // --- FIM --- Filtro de agentes (por dano).
+
 }

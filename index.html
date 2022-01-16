@@ -59,19 +59,20 @@
                 
                 <div class="filter-agents-flexbox">
                     <h4>Filtrar agentes</h4>
-                    <select class="skills-field" name="">
+                    <select class="skills-field" id="skills-field-id">
                         <option value="00">Selecione uma habilidade</option>
                         <option value="1">Arma branca</option>
                         <option value="2">Arma primária</option>
                         <option value="3">Arma secundária</option>
                         <option value="4">Especial</option>
                     </select>
-                    <select class="filter-field" name="">
+                    <select class="filter-field" id="filter-field-id">
                         <option value="00">Selecione um filtro</option>
-                        <option value="0">com dano menor que</option>
-                        <option value="1">com dano maior que</option>
+                        <option value="menor">com dano menor que</option>
+                        <option value="maior">com dano maior que</option>
+                        <option value="igual">com dano igual à</option>
                     </select>
-                    <input class="damage-field" type="number" min="0" max="100" placeholder="Informe o valor do dano">
+                    <input class="damage-field" id="damage-field-id" type="number" min="0" max="100" placeholder="Informe o valor do dano">
                     <input class="filter-button" type="button" value="FILTRAR">
                 </div>
             </div>
