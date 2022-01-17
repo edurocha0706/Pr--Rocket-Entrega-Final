@@ -1,7 +1,7 @@
 window.onload=function(){
   'use strict';
 
-  // --- INÍCIO --- Mostra os agentes que constam no banco de dados.
+  // --- INÍCIO --- MOSTRA OS AGENTES DO BANCO DE DADOS, BOTÃO "VER TODOS" E "ADICIONAR".
 
     const json = `[{
       "data": {
@@ -341,8 +341,10 @@ window.onload=function(){
     var textToView4 = '<div class="seeall-div-text"><h2>ver todos</h2></div>';
     document.getElementById('agents-flexbox-id').insertAdjacentHTML('beforeend',textToView4);
 
-  // --- FIM --- Mostra os agentes que constam no banco de dados.
+  // --- FIM --- MOSTRA OS AGENTES DO BANCO DE DADOS, BOTÃO "VER TODOS" E "ADICIONAR".
 
+  // --- INÍCIO --- EVENTOS DO POPUP, BOTÃO "VER TODOS" E "ADICIONAR".
+  
   var $popupClose = document.querySelector('.popup-agent-close');
   var $popupWrapper = document.querySelector('.popup-wrapper');
 
@@ -382,7 +384,9 @@ window.onload=function(){
     
   });
 
-  // --- INÍCIO --- Carroséis de armas.
+  // --- FIM --- EVENTOS DO POPUP, BOTÃO "VER TODOS" E "ADICIONAR".
+
+  // --- INÍCIO --- CARROSÉIS DE ARMAS.
 
   var numberOfGunsCarousel1 = allagents[0].data.guns.primaryGun.length
 
@@ -439,9 +443,9 @@ window.onload=function(){
     btnNext: '.next'
   })
 
-  // --- FIM --- Carroséis de armas.
+  // --- FIM --- CARROSÉIS DE ARMAS.
 
-  // --- INÍCIO --- Scroll de mapas.
+  // --- INÍCIO --- SCROLL DE MAPAS.
 
   var numberOfMapsCarousel = allagents[0].data.maps.length
 
@@ -454,9 +458,9 @@ window.onload=function(){
     document.getElementById('maps-slideshow-id').insertAdjacentHTML('beforeend',textToAddMaps);
   }
 
-  // --- FIM --- Scroll de mapas.
+  // --- FIM --- SCROLL DE MAPAS.
 
-  // --- INÍCIO --- Cria novos agentes.
+  // --- INÍCIO --- CRIAÇÃO DE NOVOS AGENTES.
 
     var $saveButton = document.querySelector('.save-button');
 
@@ -500,7 +504,6 @@ window.onload=function(){
       
       arrNewAgents.push(newAgentCreated);
       allagents[0].data.agents.push(newAgentCreated);
-      // console.log(allagents[0].data.agents);
       
       textToAdd = '<li><div class="agent-div" id="agent'+(allagents[0].data.agents.length+count)+'-id"><img class="agent-img" src="'+arrNewAgents[count].image+'" alt="agente '+arrNewAgents[count].name+'"><div class="agent newAgent'+count+'"><p>'+arrNewAgents[count].name+'</p></div></div></li>';
       document.getElementById('agents-flexbox-id').insertAdjacentHTML('beforeend',textToAdd)
@@ -535,9 +538,9 @@ window.onload=function(){
       document.getElementById('image-field').value = '';
     }
 
-    // --- FIM --- Cria novos agentes.
+    // --- FIM --- CRIAÇÃO DE NOVOS AGENTES.
     
-    // --- INÍCIO --- Mostra os novos agentes criados.
+    // --- INÍCIO --- MOSTRA AS INFORMAÇÕES DOS NOVOS AGENTES CRIADOS.
 
     function showNewAgents(agtX){
       var agt = agtX;
@@ -550,9 +553,9 @@ window.onload=function(){
       })
     }
 
-    // --- FIM --- Mostra os novos agentes criados.
+    // --- FIM --- MOSTRA AS INFORMAÇÕES DOS NOVOS AGENTES CRIADOS.
 
-    // --- INÍCIO --- Mostrar na tela os dados do "formulário Suporte".
+    // --- INÍCIO --- MOSTRA OS DADOS INSERIDOS NO FORMULÁRIO "SUPORTE".
 
     var $sendSupportButton = document.querySelector('.send-support-button');
 
@@ -579,13 +582,9 @@ window.onload=function(){
       
       $popupWrapper.style.display = 'block';
 
-      console.log(newSupportMsgCreated);
-
       cleanSupportMsg();
 
       arrNewSupportMsgs.push(newSupportMsgCreated);
-
-      console.log(arrNewSupportMsgs);
 
       var textToViewSupportMsg = '<div class="content-data" id="content-data-id"><br><br><p>Nome completo: '+arrNewSupportMsgs[count2].name+' '+arrNewSupportMsgs[count2].lastName+'</p><br><p>Apelido: '+arrNewSupportMsgs[count2].nickName+'</p><br><p>E-mail: '+arrNewSupportMsgs[count2].email+'</p><br><p>Assunto: '+arrNewSupportMsgs[count2].subject+'</p><br><p>Mensagem: '+arrNewSupportMsgs[count2].description+'</p></div>'; 
       document.getElementById('popup-content-flexbox-id').insertAdjacentHTML('beforeend',textToViewSupportMsg);
@@ -613,9 +612,9 @@ window.onload=function(){
       document.getElementById('support-description-id').value = '';
     }
 
-  // --- FIM --- Mostrar na tela os dados do "formulário Suporte".
+  // --- FIM --- MOSTRA OS DADOS INSERIDOS NO FORMULÁRIO "SUPORTE".
   
-  // --- INÍCIO --- Busca de agentes (por nome).
+  // --- INÍCIO --- CAMPO DE PESQUISA DE AGENTE (POR NOME).
 
   const $inputSearchField = document.querySelector('#search-field-id');
   $inputSearchField.addEventListener('input', searchByName);
@@ -633,9 +632,9 @@ window.onload=function(){
     }
   }
 
-  // --- FIM --- Busca de agentes (por nome).
+  // --- FIM --- CAMPO DE PESQUISA DE AGENTE (POR NOME).
 
-  // --- INÍCIO --- Filtro de agentes (por dano).
+  // --- INÍCIO --- FILTRO DE AGENTES (POR DANO).
 
   var $filterButton = document.querySelector('.filter-button');
 
@@ -643,14 +642,11 @@ window.onload=function(){
 
     var selectSkills = document.getElementById('skills-field-id');
     var selectedValueOfSkills = selectSkills.options[selectSkills.selectedIndex].value;
-    console.log(selectedValueOfSkills);
 
     var selectCondition = document.getElementById('filter-field-id');
     var selectedValueOfCondition = selectCondition.options[selectCondition.selectedIndex].value;
-    console.log(selectedValueOfCondition);
 
     var damageByUser = document.getElementById("damage-field-id").value;
-    console.log(damageByUser);
     
     switch (selectedValueOfSkills){
       case '1':
@@ -802,6 +798,6 @@ window.onload=function(){
     } 
   }
 
-  // --- FIM --- Filtro de agentes (por dano).
+  // --- FIM --- FILTRO DE AGENTES (POR DANO).
 
 }

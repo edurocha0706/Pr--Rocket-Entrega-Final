@@ -12,6 +12,8 @@
     src: url(../fonts/SegoeUI-Bold.ttf);
 }
 
+/* --- INÍCIO --- ESTILIZAÇÃO DO POPUP E SEUS CONTEÚDOS */
+
 .popup-wrapper{
     display: none;
     background: #44505fab;
@@ -271,3 +273,5 @@ h3{
     margin-left: 20px;
     border: none;
 }
+
+/* --- FIM --- ESTILIZAÇÃO DO POPUP E SEUS CONTEÚDOS */
