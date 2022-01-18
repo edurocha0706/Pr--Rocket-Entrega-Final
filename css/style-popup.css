@@ -27,7 +27,7 @@
 .popup-agent{
     width: 1114px;
     height: 713px;
-    margin: 8% auto;
+    margin: 4% auto;
     background-color: #ffffff;
     position: relative;
 }
@@ -141,7 +141,7 @@ h3{
 .popup-add-new-agent{
     width: 1158px;
     height: 690px;
-    margin: 18% auto;
+    margin: 4% auto;
     background-color: #ffffff;
     position: relative;
 }
