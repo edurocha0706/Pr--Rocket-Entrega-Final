@@ -621,7 +621,6 @@ hr{
 
 .support-form input::placeholder{
     color: #133052;
-    padding-top: 16px;
 }
 
 textarea::placeholder{
