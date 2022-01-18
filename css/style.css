@@ -622,12 +622,10 @@ hr{
 .support-form input::placeholder{
     color: #133052;
     padding-top: 16px;
-    position: absolute;
 }
 
 textarea::placeholder{
     color: #133052;
-    position: absolute;
 }
 
 .support-form{
